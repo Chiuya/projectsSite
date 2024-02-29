@@ -11,8 +11,9 @@
   
   header {
     background-color: #FAF5F5;
-    padding: 4rem;
+    padding: 5rem;
     text-align: center;
+    color: #383838;
 
   }
   
@@ -35,34 +36,85 @@
     scroll-snap-type: y mandatory;
   }
 
+  /* each project section */
   .section {
-    height: 100vh;
+    height: fit-content;
     background-color: #D9B0A3;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
   }
-  
+  /* white box*/
   .centered-box {
+    margin-top: 10rem;
+    width: 53%;
     background-color: #FAF5F5;
     padding: 2rem;
     text-align: center;
+    color: #383838;
+    margin-bottom: 5rem;
   }
-  
+  /*photo*/
+  .centered-box img {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+  }
+  /*year*/
   .centered-box h1 {
-    font-size: 6rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
     line-height: 0.8;
-    margin-bottom: 0.5rem;
+    color: #383838;
   }
-  
+  /*title*/
   .centered-box h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.2;
-    margin-top: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #383838;
+  }
+  /*description*/
+  .centered-box h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-top: 0.2rem;
+    margin-bottom: 1.75rem;
+    color: #383838;
+  }
+  /*link button*/
+  .centered-box a:link, a:visited {
+    width: 100%;
+    height: auto;
+    background-color: #D9B0A3;
+    color: #FAF5F5;
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .centered-box a:hover, a:active {
+    transform: scale(1.05);
+  }
+  /*solid line*/
+  .solid-line {
+    width: 70%;
+    position: relative;
+    height: 4px;
+    border-top: 2px solid #D9B0A3;
+    background: linear-gradient(to right, #D9B0A3 50%, #D9B0A3 50%);
+    margin: 20px 20px;
   }
   
-  @media (max-width: 768px) {
+  /*not sure what this is: @media (max-width: 768px) { 
     .centered-box h1 {
       font-size: 4rem;
     }
@@ -70,4 +122,4 @@
     .centered-box h2 {
       font-size: 2rem;
     }
-  }
+  }*/
