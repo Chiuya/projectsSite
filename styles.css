@@ -41,7 +41,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
   }
   /* white box*/
   .centered-box {
@@ -52,6 +51,7 @@
     text-align: center;
     color: #383838;
     margin-bottom: 5rem;
+    box-shadow: 0.1rem 0.2rem 1rem 1rem rgba(0, 0, 0, 0.15);
   }
   /*photo*/
   .centered-box img {
