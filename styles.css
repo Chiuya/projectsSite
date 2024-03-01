@@ -20,7 +20,7 @@
   header h1 {
     margin: 0;
     font-size: 8rem;
-    text-shadow: 0.5rem 0.3rem 0px #D9B0A3;
+    text-shadow: 0.45rem 0.35rem 0px #D9B0A3;
   }
   header h2 {
     margin: 0;
@@ -107,20 +107,24 @@
   }
   /*solid line*/
   .solid-line {
-    width: 70%;
     position: relative;
+    width: 60%;
     height: 4px;
-    border-top: 2px solid #D9B0A3;
     background: linear-gradient(to right, #D9B0A3 50%, #D9B0A3 50%);
-    margin: 20px 20px;
+    margin: 20px auto; /* Auto margin for horizontal centering */
+    overflow: hidden;
   }
   
-  /*not sure what this is: @media (max-width: 768px) { 
-    .centered-box h1 {
-      font-size: 4rem;
-    }
+  .solid-line::before,
+  .solid-line::after {
+    content: "";
+    display: block;
+    height: 2px;
+  }
   
-    .centered-box h2 {
-      font-size: 2rem;
-    }
-  }*/
+  .solid-line::before {
+    margin-bottom: 8px;
+  }
+  .solid-line::after {
+    margin-top: 8px;
+  }
