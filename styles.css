@@ -16,15 +16,31 @@
     color: #383838;
   }
   
+  /*bella*/
   header h1 {
     margin: 0;
     font-size: 8rem;
     text-shadow: 0.45rem 0.35rem 0px #D9B0A3;
   }
+
+  /* line*/
+  header hr {
+    border: none;
+    border-top: 0.25rem double #D9B0A3;
+    color: #D9B0A3;
+    overflow: visible;
+    text-align: center;
+    height: 0.5rem;
+    width: 50%;
+    margin: auto;
+  }
+
+  /*game dev proj*/
   header h2 {
     margin: 0;
     font-size: 2.5rem;
     text-shadow: 0.2rem 0.15rem 0px #D9B0A3;
+    margin-top: 0.75rem;
   }
   
   main {
@@ -88,30 +104,30 @@
   /*link button*/
   .centered-box a:link, a:visited {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #D9B0A3;
     color: #FAF5F5;
-    padding: 1.5rem 0.8rem;
+    padding: 1.5rem 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
     transition: transform 0.2s ease-in-out;
+    margin-top: 0.75rem;
   }
   .centered-box a:hover, a:active {
     transform: scale(1.05);
   }
-
   /* line*/
-  hr {
+  .centered-box hr {
     border: none;
-    border-top: 0.25rem double #D9B0A3;
+    border-top: 0.2rem double #D9B0A3;
     color: #D9B0A3;
     overflow: visible;
     text-align: center;
     height: 0.5rem;
-    width: 50%;
+    width: 70%;
     margin: auto;
   }
