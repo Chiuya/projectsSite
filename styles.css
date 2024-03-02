@@ -103,26 +103,15 @@
   .centered-box a:hover, a:active {
     transform: scale(1.05);
   }
-  /*solid line*/
-  .solid-line {
-    position: relative;
-    width: 60%;
-    height: 4px;
-    background: linear-gradient(to right, #D9B0A3 50%, #D9B0A3 50%);
-    margin: 1.5rem auto;
-    overflow: hidden;
-  }
-  
-  .solid-line::before,
-  .solid-line::after {
-    content: "";
-    display: block;
-    height: 0.2rem;
-  }
-  
-  .solid-line::before {
-    margin-bottom: 0.2rem;
-  }
-  .solid-line::after {
-    margin-top: 0.2rem;
+
+  /* line*/
+  hr {
+    border: none;
+    border-top: 0.25rem double #D9B0A3;
+    color: #D9B0A3;
+    overflow: visible;
+    text-align: center;
+    height: 0.5rem;
+    width: 50%;
+    margin: auto;
   }
