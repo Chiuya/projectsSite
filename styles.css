@@ -135,6 +135,17 @@
     margin: auto;
   }
 
+  /*fade-in class*/
+  .fade-in {
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .fade-in.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   /*contact info footer*/
   footer {
     background-color: #D9B0A3;
@@ -216,6 +227,9 @@
     .centered-box a:link, a:visited {
       padding: 1.5rem 1rem;
       font-size: 1.2rem;
+    }
+    .fade-in {
+      transform: translateY(1rem);
     }
     footer a:link, a:visited {
       width: 5rem;
