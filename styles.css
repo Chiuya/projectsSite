@@ -164,6 +164,10 @@
     border-radius: 50%;
     border: 0.6rem solid #FAF5F5;
     margin-top: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  footer a:hover, a:active {
+    transform: translate(0rem, -0.5rem);
   }
 
   @media only screen and (min-width: 768px) {
@@ -216,9 +220,6 @@
     footer a:link, a:visited {
       width: 5rem;
       height: 5rem;
-    }
-    footer a:hover, a:active {
-      transform: translate(0rem, -0.5rem);
     }
   }
 
