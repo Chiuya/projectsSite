@@ -1,3 +1,4 @@
+/*For phones*/
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
   
   header {
     background-color: #FAF5F5;
-    padding: 5rem;
+    padding: 1.75rem;
     text-align: center;
     color: #383838;
   }
@@ -19,8 +20,8 @@
   /*bella*/
   header h1 {
     margin: 0;
-    font-size: 8rem;
-    text-shadow: 0.45rem 0.35rem 0px #D9B0A3;
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.1rem 0rem #D9B0A3;  
   }
 
   /* line*/
@@ -38,8 +39,8 @@
   /*game dev proj*/
   header h2 {
     margin: 0;
-    font-size: 2.5rem;
-    text-shadow: 0.2rem 0.15rem 0px #D9B0A3;
+    font-size: 1.5rem;
+    text-shadow: 0.15rem 0.1rem 0rem #D9B0A3;
     margin-top: 0.75rem;
   }
   
@@ -61,9 +62,9 @@
   /* white box*/
   .centered-box {
     margin-top: 10rem;
-    width: 53%;
+    width: 100%;
     background-color: #FAF5F5;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
     color: #383838;
     margin-bottom: 5rem;
@@ -73,7 +74,8 @@
   .centered-box img {
     height: auto;
     width: 100%;
-    border-radius: 5px;
+    object-fit:contain;
+    border-radius: 0.2rem;
     box-shadow: none;
   }
   /*year*/
@@ -91,7 +93,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: #383838;
-    text-shadow: 0.2rem 0.15rem 2px #D9B0A3;
+    text-shadow: 0.2rem 0.15rem 0.1rem #D9B0A3;
   }
   /*description*/
   .centered-box h3 {
@@ -108,12 +110,12 @@
     height: 100%;
     background-color: #D9B0A3;
     color: #FAF5F5;
-    padding: 1.5rem 1rem;
+    padding: 0.75rem 0.75rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     transition: transform 0.2s ease-in-out;
     margin-top: 0.75rem;
     font-family: "Verdana", sans-serif;
@@ -152,18 +154,78 @@
   /*round link buttons*/
   footer a:link, a:visited {
     display:block;
-    width: 5rem;
-    height: 5rem;
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 1rem; 
+    width: 4rem;
+    height: 4rem;
     text-align: center;
     text-decoration: none;
     color: #FAF5F5;
     display: inline-block;
     border-radius: 50%;
     border: 0.6rem solid #FAF5F5;
-    transition: transform 0.2s ease-in-out;
     margin-top: 1.5rem;
   }
-  footer a:hover, a:active {
-    transform: translate(0rem, -0.5rem);
+
+  @media only screen and (min-width: 768px) {
+    /*For Tablet*/
+    header {
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0.2rem 0.17rem 0rem #D9B0A3;
+    }
+    header h2 {
+      font-size: 2rem;
+      text-shadow: 0.1.75rem 0.15rem 0rem #D9B0A3;
+    }
+    .centered-box {
+      padding: 2rem;
+    }
+    .centered-box a:link, a:visited {
+      padding: 1.75rem 1rem;
+      font-size: 1.2rem;
+    }
+    footer a:link, a:visited {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
   }
+
+  @media only screen and (min-width: 992px) {
+    /*Laptops, Desktops, Monitors and up*/
+    header {
+      padding: 5rem;
+    }
+    header h1 {
+      font-size: 8rem;
+      text-shadow: 0.45rem 0.35rem 0rem #D9B0A3;
+    }
+    header h2 {
+      font-size: 2.5rem;
+      text-shadow: 0.2rem 0.15rem 0rem #D9B0A3;
+    }
+    .centered-box {
+      padding: 2rem;
+      width: 53%;
+    }
+    .centered-box a:link, a:visited {
+      padding: 1.5rem 1rem;
+      font-size: 1.2rem;
+    }
+    footer a:link, a:visited {
+      width: 5rem;
+      height: 5rem;
+    }
+    footer a:hover, a:active {
+      transform: translate(0rem, -0.5rem);
+    }
+  }
+
+  /*max-width 320px	Smartwatches
+  max-width 420px	Smaller devices
+  max-width 600px	Phones
+  min-width 600px	Tablets and Large Phones
+  min-width 768px	Tablets
+  min-width 992px	Laptops and Desktops
+  min-width 1200px	Monitors, Desktops*/
