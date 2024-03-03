@@ -74,6 +74,7 @@
     height: auto;
     width: 100%;
     border-radius: 5px;
+    box-shadow: none;
   }
   /*year*/
   .centered-box h1 {
@@ -156,6 +157,7 @@
     padding: 1.2rem 1rem;
     text-align: center;
     text-decoration: none;
+    color: #FAF5F5;
     display: inline-block;
     border-radius: 50%;
     border: 0.6rem solid #FAF5F5;
