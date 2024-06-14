@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 /*For phones*/
 * {
     margin: 0;
@@ -112,13 +114,13 @@
     color: #FAF5F5;
     padding: 0.75rem 0.75rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-decoration: none;
     display: inline-block;
     border-radius: 0.3rem;
     transition: transform 0.2s ease-in-out;
     margin-top: 0.75rem;
-    font-family: "Verdana", sans-serif;
+    font-family: 'VT323', monospace;
   }
   .centered-box a:hover, a:active {
     transform: scale(1.05);
@@ -198,8 +200,8 @@
       padding: 2rem;
     }
     .centered-box a:link, a:visited {
-      padding: 1.75rem 1rem;
-      font-size: 1.2rem;
+      padding: 1.3rem 1rem;
+      font-size: 1.9rem;
     }
     footer a:link, a:visited {
       width: 4.5rem;
@@ -225,8 +227,8 @@
       width: 53%;
     }
     .centered-box a:link, a:visited {
-      padding: 1.5rem 1rem;
-      font-size: 1.2rem;
+      padding: 0.8rem 0.8rem;
+      font-size: 1.7rem;
     }
     .fade-in {
       transform: translateY(1rem);
